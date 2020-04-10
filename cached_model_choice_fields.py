@@ -1,3 +1,5 @@
+from django import forms
+
 class CachingModelChoicesFormSet(forms.BaseInlineFormSet):
     """
     Used to avoid duplicate DB queries by caching choices and passing them all the forms.
